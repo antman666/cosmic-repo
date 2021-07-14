@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build_clear
-        uses: antman666/build_aur_action@master
+        uses: antman666/build-aur-action@master
         with:
           repo-name: linux-clear
       - uses: ncipollo/release-action@v1.8.6
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build_projectC
-        uses: antman666/build_aur_action@master
+        uses: antman666/build-aur-action@master
         with:
           repo-name: linux-gc
       - uses: ncipollo/release-action@1.8.6
@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build_lqx  
-        uses: antman666/build_aur_action@master
+        uses: antman666/build-aur-action@master
         with:
           repo-name: linux-lqx
       - uses: ncipollo/release-action@1.8.6
