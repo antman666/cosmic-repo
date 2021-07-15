@@ -21,7 +21,7 @@ jobs:
         uses: antman666/build-aur-action@master
         with:
           repo-name: linux-gc
-      - uses: ncipollo/release-action@1.8.6
+      - uses: ncipollo/release-action@v1.8.6
         with:
           allowUpdates: True
           tag: "linux-gc"
@@ -34,7 +34,7 @@ jobs:
         uses: antman666/build-aur-action@master
         with:
           repo-name: linux-lqx
-      - uses: ncipollo/release-action@1.8.6
+      - uses: ncipollo/release-action@v1.8.6
         with:
           allowUpdates: True
           tag: "linux-lqx"
