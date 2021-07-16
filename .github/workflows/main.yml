@@ -37,6 +37,6 @@ jobs:
       - uses: ncipollo/release-action@v1.8.6
         with:
           allowUpdates: True
-          tag: "linux-lqx "
+          tag: "linux-lqx"
           artifacts: "./*/*.zst"
           token: ${{ secrets.GITHUB_TOKEN }}
