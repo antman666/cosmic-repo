@@ -6,7 +6,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [linux-clear, linux-gc, linux-lqx, linux-xanmod-rt, linux-xanmod-cacule, linux-next, linux-mainline, linux-lts414, linux-lts419, linux-lts44, linux-lts49, linux-lts54]
+        repos: [linux-bfq-dev, linux-ck, linux-clear, linux-clear-current, linux-clear-lts2020, linux-gc, linux-libre, linux-lqx, linux-pds, linux-pf, linux-pf-git, linux-rt, linux-rt-bfq-dev, linux-uksm, linux-xanmod, linux-xanmod-cacule, linux-xanmod-rt, linux-zen-g14, linux-next, linux-mainline]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
