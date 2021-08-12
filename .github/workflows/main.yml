@@ -1,146 +1,21 @@
 name: Auto Build Some Kernels
-on: push
+on: 
+  schedule:
+    - cron: 0 */24 * * *
 jobs:
-  build_clear:
+  build:
+    strategy:
+      matrix:
+        repos: [linux-clear, linux-gc, linux-lqx, linux-xanmod-rt, linux-xanmod-cacule, linux-next, linux-mainline, linux-lts414, linux-lts419, linux-lts44, linux-lts49, linux-lts54]
+      fail-fast: false
     runs-on: ubuntu-latest
     steps:
-      - name: build_clear
-        uses: antman666/build-aur-action@master
+      - uses: antman666/build-aur-action@master
         with:
-          repo-name: linux-clear
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: true
-          tag: "linux-clear"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_projectC:
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_projectC
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-gc
+          repo-name: ${{ matrix.repos }}
       - uses: ncipollo/release-action@v1.8.6
         with:
           allowUpdates: True
-          tag: "linux-gc"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_lqx: 
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_lqx  
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-lqx
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "linux-lqx"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_xanmod-rt: 
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_xanmod-rt  
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-xanmod-rt
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "linux-xanmod-rt"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_next:          
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_next           
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-next-git
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "linux-next"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_mainline: 
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_mainline  
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-mainline
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "linux-next"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_lts414:          
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_lts414           
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-lts414
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "linux-lts414"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_lts419:          
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_lts419           
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-lts419
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "linux-lts419"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_lts44:          
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_lts44           
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-lts44
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "linux-lts44"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_lts49:          
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_lts49           
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-lts49
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "linux-lts49"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_lts54:          
-    runs-on: ubuntu-latest
-    steps:
-      - name: build_lts54           
-        uses: antman666/build-aur-action@master
-        with:
-          repo-name: linux-lts54
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "linux-lts54"
+          tag: "linux_kernels"
           artifacts: "./*/*.zst"
           token: ${{ secrets.GITHUB_TOKEN }}
