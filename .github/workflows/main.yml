@@ -3,7 +3,7 @@ env:
   TZ: Asia/Shanghai
 on: 
   schedule:
-    - cron: 0 11 * * 5
+    - cron: '0 12 * * 5'
 jobs:
   build:
     strategy:
@@ -18,6 +18,18 @@ jobs:
       - uses: ncipollo/release-action@v1.8.6
         with:
           allowUpdates: True
-          tag: "linux_kernels"
+          tag: "x86_64"
           artifacts: "./*/*.zst"
+          token: ${{ secrets.GITHUB_TOKEN }}
+  update_db:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: antman666/update-db-for-repo@master
+        with: 
+          tag: x86_64
+      - uses: ncipollo/release-action@v1.8.6
+        with:
+          allowUpdates: True
+          tag: "x86_64"
+          artifacts: "./kernels.*"
           token: ${{ secrets.GITHUB_TOKEN }}
