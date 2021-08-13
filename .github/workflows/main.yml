@@ -8,7 +8,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [linux-bfq-dev, linux-ck, linux-clear, linux-gc, linux-libre, linux-lqx, linux-pds, linux-pf-git, linux-rt, linux-uksm, linux-xanmod, linux-xanmod-cacule, linux-xanmod-rt, linux-next-git, linux-mainline]
+        repos: [linux-bfq-dev, linux-ck, linux-clear, linux-gc, linux-libre, linux-lqx, linux-pds, linux-rt, linux-uksm, linux-xanmod, linux-xanmod-cacule, linux-xanmod-rt, linux-next-git, linux-mainline, linux-lts414, linux-lts419, linux-lts44, linux-lts49, linux-lts54]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
@@ -20,17 +20,4 @@ jobs:
           allowUpdates: True
           tag: "x86_64"
           artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  update_db:
-    needs: build
-    runs-on: ubuntu-latest
-    steps: 
-      - uses: antman666/update-db-for-repo@master
-        with: 
-          tag: x86_64
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "x86_64"
-          artifacts: "./kernels.*"
           token: ${{ secrets.GITHUB_TOKEN }}
