@@ -2,8 +2,9 @@ name: Auto Build Some Kernels
 env: 
   TZ: Asia/Shanghai
 on: 
+  workflow_dispatch:
   schedule:
-    - cron: '0 12 * * 5'
+    - cron: '0 13 * * 5'
 jobs:
   build:
     strategy:
