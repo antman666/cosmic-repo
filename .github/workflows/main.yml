@@ -8,7 +8,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [linux-bfq-dev, linux-ck, linux-clear, linux-gc, linux-libre, linux-lqx, linux-pds, linux-pf, linux-rt, linux-uksm, linux-xanmod, linux-xanmod-cacule, linux-xanmod-rt, linux-next, linux-mainline]
+        repos: [linux-bfq-dev, linux-ck, linux-clear, linux-gc, linux-libre, linux-lqx, linux-pds, linux-pf-git, linux-rt, linux-uksm, linux-xanmod, linux-xanmod-cacule, linux-xanmod-rt, linux-next-git, linux-mainline]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
