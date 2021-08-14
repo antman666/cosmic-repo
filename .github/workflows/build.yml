@@ -1,6 +1,5 @@
 name: Auto Build Some Kernels
 on: 
-  push:
   workflow_dispatch:
   schedule:
     - cron: '0 0 */6 * *'
