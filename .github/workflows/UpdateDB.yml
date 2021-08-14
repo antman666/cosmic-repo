@@ -2,7 +2,7 @@ name: Update kernel db
 on: 
   workflow_dispatch:
   schedule: 
-    - cron: '0 12 */6 * *'
+    - cron: '30 13 * * *'
 jobs: 
   update_db:
     runs-on: ubuntu-latest
