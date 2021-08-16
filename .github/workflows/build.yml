@@ -2,7 +2,7 @@ name: Auto Build Some Kernels
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 2'
+    - cron: '0 18 * * 1'
 jobs:
   build:
     strategy:
