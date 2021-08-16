@@ -1,9 +1,8 @@
-name: Update kernel db
+name: Update kernels.db
 on: 
-  push:
   workflow_dispatch:
   schedule: 
-    - cron: '0 8 */6 * *'
+    - cron: '0 8 * * 2'
 jobs: 
   update_db:
     runs-on: ubuntu-latest
