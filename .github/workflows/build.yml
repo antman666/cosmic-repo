@@ -2,7 +2,7 @@ name: Auto Build Some Kernels
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '0 18 * * 1'
+    - cron: '0 18 * * 2'
 jobs:
   build:
     strategy:
@@ -14,6 +14,20 @@ jobs:
       - uses: antman666/build-aur-action@master
         with:
           repo-name: ${{ matrix.repos }}
+      - uses: ncipollo/release-action@v1.8.6
+        with:
+          allowUpdates: True
+          tag: "x86_64"
+          artifacts: "./*/*.zst"
+          token: ${{ secrets.GITHUB_TOKEN }}
+  pull_others_kernels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - run: |
+          sudo apt update && sudo apt upgrade -y
+          sudo apt install wget -y
+          bash pull_kernels.sh
       - uses: ncipollo/release-action@v1.8.6
         with:
           allowUpdates: True

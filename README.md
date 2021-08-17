@@ -7,10 +7,18 @@
 ```
 [kernels]
 SigLevel = Never
-Server = https://github.com/antman666/test/releases/download/$arch
+Server = https://github.com/antman666/kernel-repo/releases/download/$arch
 ```
 
-#### Then run
+or you can use reverse proxy from [zhullyb](https://zhullyb.top)
+
+```
+[kernels]
+SigLevel = Never
+Server = https://r.zhullyb.top/https://github.com/antman666/kernel-repo/releases/download/$arch
+```
+
+Then run
 
 ```bash
 sudo pacman -Syy
