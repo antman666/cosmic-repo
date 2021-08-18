@@ -2,7 +2,7 @@ name: Auto Build Some Kernels
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '0 18 * * 2'
+    - cron: '0 18 * * 3'
 jobs:
   build:
     strategy:
@@ -23,10 +23,11 @@ jobs:
   pull_others_kernels:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
       - run: |
           sudo apt update && sudo apt upgrade -y
-          sudo apt install wget -y
+          sudo apt install wget git -y
+          git clone https://github.com/antman666/kernel-repo
+          cd kernel-repo
           bash pull_kernels.sh
       - uses: ncipollo/release-action@v1.8.6
         with:
