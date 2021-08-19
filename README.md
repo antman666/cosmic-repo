@@ -10,12 +10,14 @@ SigLevel = Never
 Server = https://github.com/antman666/kernel-repo/releases/download/$arch
 ```
 
-or you can use reverse proxy from [zhullyb](https://zhullyb.top)
+or you can use reverse proxy from [zhullyb](https://zhullyb.top) , [aya](https://github.com/Brx86) , [fastgit](https://fastgit.org)
 
 ```
 [kernels]
 SigLevel = Never
 Server = https://r.zhullyb.top/https://github.com/antman666/kernel-repo/releases/download/$arch
+Server = https://git.aya1.xyz/https://github.com/antman666/kernel-repo/releases/download/$arch
+Server = https://hub.fastgit.org/antman666/kernel-repo/releases/download/$arch
 ```
 
 Then run
