@@ -26,4 +26,4 @@ Then run
 sudo pacman -Syy
 ```
 
-This repo update once a week
+# This repo will update once a week
