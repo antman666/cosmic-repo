@@ -25,3 +25,5 @@ Then run
 ```bash
 sudo pacman -Syy
 ```
+
+This repo update once a week
