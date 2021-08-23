@@ -2,12 +2,12 @@ name: Auto Build Some Kernels
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '0 18 * * 3'
+    - cron: '0 18 * * 1'
 jobs:
   build:
     strategy:
       matrix:
-        repos: [linux-bfq-dev, linux-ck, linux-clear, linux-gc, linux-libre, linux-lqx, linux-pds, thrash-protect, linux-pf, linux-rt, linux-uksm, linux-xanmod, linux-xanmod-anbox, linux-xanmod-cacule, linux-xanmod-edge, linux-xanmod-lts, linux-xanmod-rt, linux-next-git, linux-mainline, linux-lts419, linux-lts44, linux-lts49, linux-lts54]
+        repos: [linux-bfq-dev, linux-ck, linux-clear, linux-gc, linux-libre, linux-libre-firmware, linux-lqx, linux-pds, thrash-protect, linux-pf, linux-pf-git, nvidia-pf, linux-rt, linux-rt-bfq-dev, linux-rt-lts, nvidia-rt, zfs-linux-rt, linux-uksm, linux-xanmod, linux-xanmod-anbox, linux-xanmod-cacule, linux-xanmod-edge, linux-xanmod-lts, linux-xanmod-rt, linux-next-git, linux-mainline, linux-lts419, linux-lts44, linux-lts49, linux-lts54]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:

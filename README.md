@@ -1,6 +1,30 @@
 # This repo will auto build some kernels like:
 
-linux-bfq-dev, linux-ck, linux-ck-uksm, linux-ck-uksm-cjktty, linux-clear, linux-gc, linux-libre, linux-lqx, linux-pds, linux-pf, linux-rt, linux-uksm, linux-xanmod, linux-xanmod-anbox, linux-xanmod-cacule, linux-xanmod-cacule-uksm-cjktty, linux-xanmod-edge, linux-xanmid-lts, linux-xanmod-rt, linux-next, linux-mainline, linux-lts
+- linux-bfq-dev
+- linux-ck
+- linux-ck-uksm
+- linux-ck-uksm-cjktty
+- linux-clear
+- linux-gc
+- linux-libre
+- linux-lqx
+- linux-mainline
+- linux-next
+- linux-pds
+- linux-pf (with nvidia-pf)
+- linux-pf-git (with nvidia-pf)
+- linux-rt (with nvidia-rt, zfs-linux-rt)
+- linux-rt-bfq-dev (with nvidia-rt, zfs-linux-rt)
+- linux-rt-lts (with nvidia-rt, zfs-linux-rt)
+- linux-uksm
+- linux-xanmod
+- linux-xanmod-anbox
+- linux-xanmod-cacule
+- linux-xanmod-cacule-uksm-cjktty
+- linux-xanmod-edge
+- linux-xanmod-lts
+- linux-xanmod-rt
+- linux-lts (from 4.4 to 5.4)
 
 #### If you wanna use this repo, add following things to your `/etc/pacman.conf`
 
