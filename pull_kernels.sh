@@ -7,7 +7,7 @@ for i in ${urls[*]}; do
 		wget -q https://github.com/$i
 done
 
-urls=$(curl https://github.com/antman666/linux-xanmod-cacule-uksm-cjktty/releases/tag/linux-xanmod-cacule-uksm-cjktty_for_arch -s | grep "/antman666/linux-xanmod-cacule-uksm-cjktty/releases/download/linux-xanmod-cacule-uksm-cjktty_for_arch/"|awk -F '"|"' '{print$2}')
+urls=$(curl https://github.com/antman666/linux-xanmod-cacule-uksm-cjktty/releases/tag/linux-xanmod-cacule-uksm-cjktty_for_arch -s | grep "/antman666/linux-xanmod-cacule-uksm-cjktty/releases/download/linux-xanmod-cacule-uksm-cjktty_for_arch-gcc/"|awk -F '"|"' '{print$2}')
 
 for i in ${urls[*]}; do 
 		pkg=$(echo $i|awk -F '/' '{print$7}')
