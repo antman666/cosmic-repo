@@ -1,6 +1,7 @@
 # This repo will auto build some kernels like:
 
 - linux-bfq-dev
+- linux-cacule
 - linux-ck
 - linux-ck-uksm
 - linux-ck-uksm-cjktty
@@ -11,11 +12,10 @@
 - linux-mainline
 - linux-next
 - linux-pds
-- linux-pf (with nvidia-pf)
-- linux-pf-git (with nvidia-pf)
-- linux-rt (with nvidia-rt, zfs-linux-rt)
-- linux-rt-bfq-dev (with nvidia-rt, zfs-linux-rt)
-- linux-rt-lts (with nvidia-rt, zfs-linux-rt)
+- linux-pf-git
+- linux-rt
+- linux-rt-bfq-dev
+- linux-rt-lts
 - linux-uksm
 - linux-xanmod
 - linux-xanmod-anbox
