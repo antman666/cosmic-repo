@@ -20,19 +20,3 @@ jobs:
           tag: "x86_64"
           artifacts: "./*/*.zst"
           token: ${{ secrets.GITHUB_TOKEN }}
-  pull_others_kernels:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Add Others Kernels
-        run: |
-          sudo apt update && sudo apt upgrade -y
-          sudo apt install wget git -y
-          git clone https://github.com/antman666/kernel-repo
-          cd kernel-repo
-          bash pull_kernels.sh
-      - uses: ncipollo/release-action@v1.8.6
-        with:
-          allowUpdates: True
-          tag: "x86_64"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
