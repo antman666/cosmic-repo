@@ -9,6 +9,7 @@
 - linux-libre
 - linux-lqx
 - linux-mainline
+- linux-mainline-anbox
 - linux-next
 - linux-pds
 - linux-pf-git
