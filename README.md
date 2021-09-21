@@ -1,6 +1,7 @@
 # This repo will auto build some kernels like:
 
 - linux-bfq-dev
+- linux-cjktty
 - linux-ck
 - linux-ck-uksm
 - linux-ck-uksm-cjktty
