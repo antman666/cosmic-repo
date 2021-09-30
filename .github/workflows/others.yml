@@ -2,15 +2,23 @@ name: Github Action Build PKGBUILD
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 18 * * 6'
+    - cron: '0 17 * * 6'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Build linux-cjktty
         uses: actions/checkout@v2.3.4
+      - name: update PKGBUILD
+        run: |
+          sudo apt update && sudo apt upgrade -y
+          sudo apt install python3 python3-pip -y
+          pip3 install requests
+          cd linux-cjktty
+          python3 update.py
+          cd ..
       - id: makepkg
-        uses: edlanglois/pkgbuild-action@v1.1.6
+        uses: antman666/pkgbuild-action@master
         with:
           pkgdir: "linux-cjktty"
           namcapDisable: 1
