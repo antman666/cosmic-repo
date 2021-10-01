@@ -15,7 +15,7 @@ for i in ${urls[*]}; do
 		wget -q https://github.com/$i
 done
 
-urls=$(curl https://github.com/RiverOnVenus/linux-ck-uksm-cjktty/releases/tag/v5.14.6-1 -s | grep "RiverOnVenus/linux-ck-uksm-cjktty/releases/download/v5.14.6-1"|awk -F '"|"' '{print$2}')
+urls=$(curl https://github.com/RiverOnVenus/linux-ck-uksm-cjktty/releases/tag/v5.14.9-1 -s | grep "RiverOnVenus/linux-ck-uksm-cjktty/releases/download/v5.14.9-1"|awk -F '"|"' '{print$2}')
 
 for i in ${urls[*]}; do 
 		pkg=$(echo $i|awk -F '/' '{print$7}')
