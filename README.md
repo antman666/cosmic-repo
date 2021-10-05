@@ -8,13 +8,13 @@
 - linux-clear
 - linux-gc
 - linux-libre
-- linux-lqx
+- linux-lqx ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#liquorix) is the liquorix repo)
 - linux-mainline
 - linux-mainline-anbox
 - linux-next
 - linux-pds
-- linux-pf-git
-- linux-rt
+- linux-pf-git ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel) is the kernel repo(include Pf,XanMod,Liquorix))
+- linux-rt ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#realtime) is the realtime repo)
 - linux-rt-bfq-dev
 - linux-rt-lts
 - linux-uksm
@@ -25,7 +25,7 @@
 - linux-xanmod-edge
 - linux-xanmod-lts
 - linux-xanmod-rt
-- linux-lts (from 4.4 to 5.4)
+- linux-lts (from 4.4 to 5.4,[here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel-lts) is the kernel-lts repo)
 
 #### If you wanna use this repo, add following things to your `/etc/pacman.conf`
 
@@ -51,4 +51,4 @@ Then run
 sudo pacman -Syy
 ```
 
-# This repo will update once a week
+# This repo will update twice a week
