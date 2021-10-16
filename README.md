@@ -4,7 +4,7 @@
 - linux-cjktty
 - linux-ck
 - linux-ck-uksm
-- linux-ck-uksm-cjktty
+- ~~linux-ck-uksm-cjktty~~
 - linux-clear
 - linux-gc
 - linux-libre
