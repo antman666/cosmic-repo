@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [linux-bfq-dev, linux-ck, linux-clear, linux-gc, linux-libre, linux-libre-firmware, linux-lqx, linux-pds, thrash-protect, linux-pf-git, linux-rt, linux-rt-bfq-dev, linux-rt-lts, linux-uksm, linux-xanmod, linux-xanmod-anbox, linux-xanmod-cacule, linux-xanmod-edge, linux-xanmod-lts, linux-xanmod-rt, linux-next-git, linux-mainline, linux-mainline-anbox, linux-lts419, linux-lts44, linux-lts49, linux-lts54]
+        repos: [linux-bfq-dev, linux-ck, linux-clear, linux-gc, linux-libre, linux-libre-firmware, linux-lqx, linux-pds, thrash-protect, linux-pf-git, linux-rt, linux-rt-bfq-dev, linux-rt-lts, linux-uksm, linux-xanmod, linux-xanmod-anbox, linux-xanmod-tt, linux-xanmod-edge, linux-xanmod-lts, linux-xanmod-rt, linux-next-git, linux-mainline, linux-mainline-anbox, linux-lts419, linux-lts44, linux-lts49, linux-lts54]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
