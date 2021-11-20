@@ -20,8 +20,8 @@
 - linux-uksm
 - linux-xanmod
 - linux-xanmod-anbox
-- linux-xanmod-cacule
-- linux-xanmod-cacule-uksm-cjktty
+- linux-xanmod-tt
+- linux-xanmod-tt-uksm-cjktty
 - linux-xanmod-edge
 - linux-xanmod-lts
 - linux-xanmod-rt
