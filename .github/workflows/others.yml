@@ -24,7 +24,7 @@ jobs:
           namcapDisable: 1
           makepkgArgs: "--skippgpcheck"
           aurDeps: 1
-      - uses: ncipollo/release-action@v1.8.6
+      - uses: ncipollo/release-action@v1.8.10
         with:
           allowUpdates: True
           tag: "x86_64"
