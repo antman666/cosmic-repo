@@ -3,6 +3,7 @@
 - linux-bfq-dev
 - linux-cjktty
 - linux-ck
+- linux-ck-lts
 - linux-ck-uksm
 - ~~linux-ck-uksm-cjktty~~
 - linux-clear
@@ -14,8 +15,8 @@
 - linux-next
 - linux-pds
 - linux-pf-git ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel) is the kernel repo(include Pf,XanMod,Liquorix))
-- linux-rt ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#realtime) is the realtime repo)
-- linux-rt-bfq-dev
+- ~~linux-rt~~ ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#realtime) is the realtime repo)
+- ~~linux-rt-bfq-dev~~
 - linux-rt-lts
 - linux-uksm
 - linux-xanmod
