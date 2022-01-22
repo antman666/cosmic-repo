@@ -1,3 +1,4 @@
+<a href="https://github.com/antman666/kernel-repo/actions"><img src="https://github.com/antman666/kernel-repo/workflows/Checks/badge.svg?branch=main" /></a>
 # This repo will auto build some kernels like:
 
 - linux-bfq-dev
