@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 14 * * 2,6'
 jobs:
-  build:
+  build_cjktty:
     runs-on: ubuntu-latest
     steps:
       - name: Build linux-cjktty
@@ -23,7 +23,24 @@ jobs:
           pkgdir: "linux-cjktty"
           namcapDisable: 1
           makepkgArgs: "--skippgpcheck"
-          aurDeps: 1
+          aurDeps: 0
+      - uses: ncipollo/release-action@v1.8.10
+        with:
+          allowUpdates: True
+          tag: "x86_64"
+          artifacts: "./*/*.zst"
+          token: ${{ secrets.GITHUB_TOKEN }}
+  build_ck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make linux-ck-lts (5.10.93)
+        id: makepkg
+        uses: antman666/pkgbuild-action@master
+        with:
+          pkgdir: "linux-ck-lts"
+          namcapDisable: 1
+          makepkgArgs: "--skippgpcheck"
+          aurDeps: 0
       - uses: ncipollo/release-action@v1.8.10
         with:
           allowUpdates: True
