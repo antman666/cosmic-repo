@@ -33,6 +33,8 @@ jobs:
   build_ck:
     runs-on: ubuntu-latest
     steps:
+      - name: Pull linux-ck-lts (5.10.93)
+        uses: actions/checkout@v2.3.4
       - name: Make linux-ck-lts (5.10.93)
         id: makepkg
         uses: antman666/pkgbuild-action@master
