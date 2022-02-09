@@ -29,20 +29,3 @@ jobs:
           tag: "x86_64"
           artifacts: "./*/*.zst"
           token: ${{ secrets.GITHUB_TOKEN }}
-  build_ck:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Make linux-ck-lts
-        uses: actions/checkout@v2.3.4
-      - id: makepkg
-        uses: antman666/pkgbuild-action@master
-        with:
-          pkgdir: "linux-ck-lts"
-          namcapDisable: 1
-          makepkgArgs: "--skippgpcheck"
-      - uses: ncipollo/release-action@v1.8.10
-        with:
-          allowUpdates: True
-          tag: "x86_64"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
