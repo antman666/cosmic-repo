@@ -11,7 +11,7 @@
 - linux-libre
 - linux-lqx ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#liquorix) is the liquorix repo)
 - linux-mainline
-- linux-mainline-anbox
+- ~~linux-mainline-anbox~~
 - linux-next
 - linux-pds
 - linux-pf-git ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel) is the kernel repo(include Pf,XanMod,Liquorix))
@@ -26,7 +26,7 @@
 - linux-xanmod-edge
 - linux-xanmod-lts
 - linux-xanmod-rt
-- linux-lts (from 4.4 to 5.4,[here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel-lts) is the kernel-lts repo)
+- linux-lts (from 4.4 to 5.10,[here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel-lts) is the kernel-lts repo)
 
 #### If you wanna use this repo, add following things to your `/etc/pacman.conf`
 
@@ -43,7 +43,7 @@ or you can use reverse proxy from [zhullyb](https://zhullyb.top) , [aya](https:/
 SigLevel = Never
 Server = https://r.zhullyb.top/https://github.com/antman666/kernel-repo/releases/download/$arch
 Server = https://git.aya1.top/antman666/kernel-repo/releases/download/$arch
-Server = https://hub.fastgit.org/antman666/kernel-repo/releases/download/$arch
+Server = https://hub.fastgit.xyz/antman666/kernel-repo/releases/download/$arch
 ```
 
 Then run
@@ -53,6 +53,8 @@ sudo pacman -Syy
 ```
 
 # This repo will update twice a week
+
+---
 
 ## [linux-cachyos](https://wiki.cachyos.org/) is a great project, [here](https://mirror.cachyos.org/repo/x86_64/cachyos/) is repo
 
@@ -115,8 +117,9 @@ Include = /etc/pacman.d/cachyos-mirrorlist
 [cachyos]
 Include = /etc/pacman.d/cachyos-mirrorlist
 ```
+---
 
-about DKMS:
+About DKMS:
 
 Q:How to ues CLANG/LLVM/LTO compiled kernels on Nvidia driver with DKMS?
 
