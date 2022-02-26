@@ -67,8 +67,8 @@ _subarch=36
 
 ### IMPORTANT: Do no edit below this line unless you know what you're doing
 
-pkgbase=linux-ck-uksm
-pkgver=5.16.10
+pkgbase=linux-ck-uksm-cjktty
+pkgver=5.16.11
 pkgrel=1
 _major=5.16
 arch=(x86_64)
