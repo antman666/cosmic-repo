@@ -86,7 +86,7 @@ _subarch=36
 ### IMPORTANT: Do no edit below this line unless you know what you're doing
 pkgbase=linux-ck-uksm
 pkgver=5.16.15
-pkgrel=1
+pkgrel=2
 _major=5.16
 arch=(x86_64)
 url="https://wiki.archlinux.org/index.php/Linux-ck"
