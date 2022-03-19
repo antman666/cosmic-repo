@@ -118,11 +118,10 @@ source=("https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-${pkgver}.tar".{xz,s
         "0008-UKSM.patch::${_patches_url}/uksm-patches/0001-UKSM-for-${_major}.patch"
         "0009-bbr2.patch::${_patches_url}/bbr2-patches/0001-bbr2-${_major}-introduce-BBRv2.patch"
         "0010-block.patch::${_patches_url}/block-patches/0001-block-patches.patch"
-        "0011-btrfs.patch::${_patches_url}/btrfs-patches-v7/0001-btrfs-patches.patch"
-        "0012-amd.patch::${_patches_url}/amd64-patches/0001-amd64-patches.patch"
-        "0013-cpufreq.patch::${_patches_url}/cpufreq-patches-v5/0001-cpufreq-patches.patch"
-        "0014-f2fs.patch::${_patches_url}/f2fs-patches-v4/0001-f2fs-patches.patch"
-        "0015-O3.patch::https://github.com/xanmod/linux-patches/raw/master/linux-5.16.y-xanmod/xanmod/0011-XANMOD-init-Kconfig-Enable-O3-KBUILD_CFLAGS-optimiza.patch"
+        "0011-amd.patch::${_patches_url}/amd64-patches/0001-amd64-patches.patch"
+        "0012-cpufreq.patch::${_patches_url}/cpufreq-patches-v5/0001-cpufreq-patches.patch"
+        "0013-f2fs.patch::${_patches_url}/f2fs-patches-v4/0001-f2fs-patches.patch"
+        "0014-O3.patch::https://github.com/xanmod/linux-patches/raw/master/linux-5.16.y-xanmod/xanmod/0011-XANMOD-init-Kconfig-Enable-O3-KBUILD_CFLAGS-optimiza.patch"
 )
 
 validpgpkeys=(
