@@ -29,20 +29,3 @@ jobs:
           tag: "x86_64"
           artifacts: "./*/*.zst"
           token: ${{ secrets.GITHUB_TOKEN }}
-  build_ck_uksm_cjktty:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build linux-ck-uksm-cjktty
-        uses: actions/checkout@2.3.4
-      - id: makepkg
-        uses: antman666/pkgbuild-action@master
-        with:
-          pkgdir: "linux-ck-uksm-cjktty"
-          namcapDisable: 1
-          makepkgArgs: "--skippgpcheck"
-      - uses: ncipollo/release-action@v1.8.10
-        with:
-          allowUpdates: True
-          tag: "x86_64"
-          artifacts: "./*/*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}

@@ -2,10 +2,10 @@
 
 - linux-bfq-dev
 - linux-cjktty
-- linux-ck
+- ~~linux-ck~~
 - ~~linux-ck-lts~~
-- linux-ck-uksm
-- linux-ck-uksm-cjktty
+- ~~linux-ck-uksm~~
+- ~~linux-ck-uksm-cjktty~~
 - linux-clear
 - linux-gc
 - linux-libre
@@ -18,14 +18,16 @@
 - ~~linux-rt~~ ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#realtime) is the realtime repo)
 - ~~linux-rt-bfq-dev~~
 - ~~linux-rt-lts~~
+- linux-shmilee (with the ck1 uksm and cjktty)
 - linux-uksm
 - linux-xanmod
 - linux-xanmod-anbox
-- linux-xanmod-tt
-- linux-xanmod-tt-uksm-cjktty
 - linux-xanmod-edge
+- linux-xanmod-lantian
 - linux-xanmod-lts
 - linux-xanmod-rt
+- linux-xanmod-tt
+- linux-xanmod-tt-uksm-cjktty
 - linux-lts (from 4.4 to 5.10,[here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel-lts) is the kernel-lts repo)
 
 #### If you wanna use this repo, add following things to your `/etc/pacman.conf`
