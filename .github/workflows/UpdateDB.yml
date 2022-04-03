@@ -15,7 +15,7 @@ jobs:
         with:
           allowUpdates: True
           tag: "x86_64"
-          artifacts: "./*/*.zst"
+          artifacts: "./*.zst"
           token: ${{ secrets.GITHUB_TOKEN }}
   update_db:
     needs: pull_others_kernels
