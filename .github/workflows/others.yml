@@ -23,7 +23,7 @@ jobs:
           pkgdir: "linux-cjktty"
           namcapDisable: 1
           makepkgArgs: "--skippgpcheck"
-      - uses: ncipollo/release-action@v1.8.10
+      - uses: ncipollo/release-action@v1.10.0
         with:
           allowUpdates: True
           tag: "x86_64"
