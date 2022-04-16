@@ -2,7 +2,7 @@
 
 - linux-bfq-dev
 - linux-cjktty
-- ~~linux-ck~~
+- linux-ck
 - ~~linux-ck-lts~~
 - ~~linux-ck-uksm~~
 - ~~linux-ck-uksm-cjktty~~
