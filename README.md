@@ -7,7 +7,7 @@
 - ~~linux-ck-uksm~~
 - ~~linux-ck-uksm-cjktty~~
 - linux-clear
-- linux-gc
+- ~~linux-gc~~
 - linux-libre
 - linux-lqx ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#liquorix) is the liquorix repo)
 - linux-mainline
@@ -18,12 +18,12 @@
 - ~~linux-rt~~ ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#realtime) is the realtime repo)
 - ~~linux-rt-bfq-dev~~
 - ~~linux-rt-lts~~
-- linux-shmilee (with the ck1 uksm and cjktty)
+- ~~linux-shmilee (with the ck1 uksm and cjktty)~~
 - linux-uksm
 - linux-xanmod
 - linux-xanmod-anbox
 - linux-xanmod-edge
-- linux-xanmod-lantian
+- ~~linux-xanmod-lantian~~
 - linux-xanmod-lts
 - linux-xanmod-rt
 - linux-xanmod-tt
