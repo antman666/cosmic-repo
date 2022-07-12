@@ -18,8 +18,9 @@
 - ~~linux-rt~~ ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#realtime) is the realtime repo)
 - ~~linux-rt-bfq-dev~~
 - ~~linux-rt-lts~~
-- ~~linux-shmilee (with the ck1 uksm and cjktty)~~
-- linux-uksm
+- linux-shmilee (with the xanmod patches uksm and cjktty)
+- ~~linux-uksm~~ (keep 5.17.9)
+- linux-uksmd
 - linux-xanmod
 - linux-xanmod-anbox
 - linux-xanmod-edge
