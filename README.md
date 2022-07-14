@@ -12,6 +12,7 @@
 - linux-lqx ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#liquorix) is the liquorix repo)
 - linux-mainline
 - ~~linux-mainline-anbox~~
+- linux-mptcp
 - linux-next
 - linux-pds
 - linux-pf-git ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel) is the kernel repo(include Pf,XanMod,Liquorix))
