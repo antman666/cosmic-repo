@@ -8,11 +8,13 @@
 - ~~linux-ck-uksm-cjktty~~
 - linux-clear
 - ~~linux-gc~~
+- linux-git
 - linux-libre
 - linux-lqx ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#liquorix) is the liquorix repo)
 - linux-mainline
 - ~~linux-mainline-anbox~~
 - linux-mptcp
+- linux=multimedia
 - linux-next
 - linux-pds
 - linux-pf-git ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel) is the kernel repo(include Pf,XanMod,Liquorix))
@@ -21,7 +23,7 @@
 - ~~linux-rt-lts~~
 - linux-shmilee (with the xanmod patches uksm and cjktty)
 - ~~linux-uksm~~ (keep 5.17.9)
-- linux-uksmd
+- linux-uksmd (need [uksmd](https://aur.archlinux.org/packages/uksmd))
 - linux-xanmod
 - linux-xanmod-anbox
 - linux-xanmod-edge
