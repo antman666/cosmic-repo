@@ -14,8 +14,8 @@
 - linux-mainline
 - ~~linux-mainline-anbox~~
 - linux-mptcp
-- linux=multimedia
-- linux-next
+- linux-multimedia
+- linux-next-git
 - linux-pds
 - linux-pf-git ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel) is the kernel repo(include Pf,XanMod,Liquorix))
 - ~~linux-rt~~ ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#realtime) is the realtime repo)
@@ -33,6 +33,8 @@
 - linux-xanmod-tt
 - linux-xanmod-tt-uksm-cjktty
 - linux-lts (from 4.4 to 5.10,[here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel-lts) is the kernel-lts repo)
+
+You can find ```linux-git, linux-libre, linux-mainline, linux-next-git, linux-xanmod, linux-xanmod-edge``` in [archlinux-cn](https://repo.archlinuxcn.org/)
 
 #### If you wanna use this repo, add following things to your `/etc/pacman.conf`
 
@@ -62,71 +64,8 @@ sudo pacman -Syy
 
 ---
 
-## [linux-cachyos](https://wiki.cachyos.org/) is a great project, [here](https://mirror.cachyos.org/repo/x86_64/cachyos/) is repo
-
-From CachyOS's wiki:
-
-How to add our Repo automatically with CPU detection (if x86-64-v3 is supported)
-
-Just run following command:
-
-automatic march detection and changing the pacman.conf:
-
-```
-wget https://build.cachyos.org/cachyos-repo.tar.xz
-tar xvf cachyos-repo.tar.xz
-sudo ./cachyos-repo.sh
-```
-
-manually:
-
-```
-sudo pacman-key --recv-keys F3B607488DB35A47 --keyserver keyserver.ubuntu.com
-
-sudo pacman-key --lsign-key F3B607488DB35A47
-
-sudo pacman -U 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-keyring-2-1-any.pkg.tar.zst' 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-mirrorlist-8-1-any.pkg.tar.zst' 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-v3-mirrorlist-8-1-any.pkg.tar.zst'
-```
-
-**Checking x86_64_v3 cpu support:**
-
-```
-/lib/ld-linux-x86-64.so.2 --help | grep "x86-64-v3 (supported, searched)"
-```
-
-if you get an output change at the /etc/pacman.conf following:
-
-```
-#Architecture = auto
-Architecture = x86_64 x86_64_v3
-```
-
-add following under the arch repos the "-v3" repos only if they are supported:
-
-```
-# cachyos repos
-[cachyos-desktop-v3]
-Include = /etc/pacman.d/cachyos-v3-mirrorlist
-[cachyos-v3]
-Include = /etc/pacman.d/cachyos-v3-mirrorlist
-[cachyos-desktop]
-Include = /etc/pacman.d/cachyos-mirrorlist
-[cachyos]
-Include = /etc/pacman.d/cachyos-mirrorlist
-```
-
-if not, add this
-
-```
-[cachyos-desktop]
-Include = /etc/pacman.d/cachyos-mirrorlist
-[cachyos]
-Include = /etc/pacman.d/cachyos-mirrorlist
-```
----
-
 About DKMS:
 
-Q:How to ues CLANG/LLVM/LTO compiled kernels on Nvidia driver with DKMS?
+Q:How to ues CLANG/LLVM compiled kernels on Nvidia driver with DKMS?
 
-A:Not need anymore since dkms 3.0.1
+A:Not need anymore since dkms 3.0.1 (if you have installed a kernel compiled with CLANG/LLVM)
