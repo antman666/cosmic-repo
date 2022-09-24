@@ -1,6 +1,6 @@
 # This repo will auto build some kernels like:
 
-- linux-bfq-dev
+- ~~linux-bfq-dev~~
 - linux-cjktty
 - linux-ck
 - ~~linux-ck-lts~~
@@ -13,7 +13,7 @@
 - linux-lqx ([here](https://wiki.archlinux.org/title/Unofficial_user_repositories#liquorix) is the liquorix repo)
 - linux-mainline
 - ~~linux-mainline-anbox~~
-- linux-mptcp
+- ~~linux-mptcp~~
 - linux-multimedia
 - linux-next-git
 - linux-pds
@@ -23,7 +23,7 @@
 - ~~linux-rt-lts~~
 - linux-shmilee (with the xanmod patches uksm and cjktty)
 - ~~linux-uksm~~ (keep 5.17.9)
-- linux-uksmd (need [uksmd](https://aur.archlinux.org/packages/uksmd))
+- ~~linux-uksmd (need [uksmd](https://aur.archlinux.org/packages/uksmd))~~
 - linux-xanmod
 - linux-xanmod-anbox
 - linux-xanmod-edge
