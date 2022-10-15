@@ -2,10 +2,11 @@
 # Contributor: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
 pkgbase=linux-cjktty
-pkgver=5.14.8.arch1
-pkgrel=1
-_version=5.14
-pkgdesc='Linux'
+pkgver=
+pkgrel=
+_version=
+_main=
+pkgdesc='Linux kernel with cjktty patch'
 _srctag=v${pkgver%.*}-${pkgver##*.}
 url="https://github.com/archlinux/linux/commits/$_srctag"
 arch=(x86_64)
@@ -20,7 +21,7 @@ _srcname=archlinux-linux
 source=(
   "$_srcname::git+https://github.com/archlinux/linux?signed#tag=$_srctag"
   config         # the main kernel config file
-  "0001-CJKTTY.patch::https://raw.githubusercontent.com/zhmars/cjktty-patches/master/v5.x/cjktty-${_version}.patch"
+  "0001-CJKTTY.patch::https://raw.githubusercontent.com/zhmars/cjktty-patches/master/${_main}/cjktty-${_version}.patch"
 )
 validpgpkeys=(
   'ABAF11C65A2970B130ABE3C479BE3E4300411886'  # Linus Torvalds
