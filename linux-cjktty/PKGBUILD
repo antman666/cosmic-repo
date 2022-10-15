@@ -21,7 +21,7 @@ _srcname=archlinux-linux
 source=(
   "$_srcname::git+https://github.com/archlinux/linux?signed#tag=$_srctag"
   config         # the main kernel config file
-  "0001-CJKTTY.patch::https://raw.githubusercontent.com/zhmars/cjktty-patches/master/${_main}/cjktty-${_version}.patch"
+  "0001-CJKTTY.patch::https://raw.githubusercontent.com/zhmars/cjktty-patches/master/v${_main}/cjktty-${_version}.patch"
 )
 validpgpkeys=(
   'ABAF11C65A2970B130ABE3C479BE3E4300411886'  # Linus Torvalds

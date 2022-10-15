@@ -9,7 +9,7 @@ pkgrel = json.loads(name.text).get("results")[0].get("pkgrel")
 versions = pkgver[:4]
 if versions[-1] == ".":
     versions = pkgver[:3]
-main = versions[0]
+main = versions[0]+".x"
 
 with open("PKGBUILD") as f:
     lists = f.readlines()
