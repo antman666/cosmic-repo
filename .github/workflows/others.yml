@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build linux-cjktty
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v3.1.0
       - name: update PKGBUILD
         run: |
           sudo apt update && sudo apt upgrade -y
@@ -23,7 +23,7 @@ jobs:
           pkgdir: "linux-cjktty"
           namcapDisable: 1
           makepkgArgs: "--skippgpcheck"
-      - uses: ncipollo/release-action@v1.10.0
+      - uses: ncipollo/release-action@v1.11.1
         with:
           allowUpdates: True
           tag: "x86_64"
