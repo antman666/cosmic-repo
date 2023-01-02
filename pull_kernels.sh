@@ -4,5 +4,5 @@ urls=$(curl https://api.github.com/repos/antman666/linux-xanmod-tt-uksm-cjktty/r
 for i in ${urls[*]}; do 
 		pkg=$(echo $i | awk -F '/' '{print $9}')
 		echo Downloading $pkg
-		wget -q https://github.com/$i
+		wget -q $i
 done
