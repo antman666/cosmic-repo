@@ -22,7 +22,7 @@
 - ~~linux-rt-bfq-dev~~
 - ~~linux-rt-lts~~
 - linux-shmilee (with the xanmod patches uksm and cjktty)
-- ~~linux-uksm~~ (keep 5.17.9)
+- ~~linux-uksm (keep 5.17.9)~~
 - ~~linux-uksmd (need [uksmd](https://aur.archlinux.org/packages/uksmd))~~
 - linux-xanmod
 - linux-xanmod-anbox
@@ -30,9 +30,9 @@
 - ~~linux-xanmod-lantian~~
 - linux-xanmod-lts
 - linux-xanmod-rt
-- linux-xanmod-tt
+- ~~linux-xanmod-tt~~
 - linux-xanmod-tt-uksm-cjktty
-- linux-lts (from 4.4 to 5.10,[here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel-lts) is the kernel-lts repo)
+- linux-lts (from 4.9 to 5.10,[here](https://wiki.archlinux.org/title/Unofficial_user_repositories#kernel-lts) is the kernel-lts repo)
 
 You can find ```linux-git, linux-libre, linux-mainline, linux-next-git, linux-xanmod, linux-xanmod-edge``` in [archlinux-cn](https://repo.archlinuxcn.org/)
 
