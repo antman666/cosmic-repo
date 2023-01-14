@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add Others Kernels
-        uses: actions/checkout@v3.1.0
+        uses: actions/checkout@v3.3.0
       - run: |
           bash pull_kernels.sh
-      - uses: ncipollo/release-action@v1.11.1
+      - uses: ncipollo/release-action@v1.12.0
         with:
           allowUpdates: True
           tag: "x86_64"
@@ -24,7 +24,7 @@ jobs:
       - uses: antman666/update-db-for-repo@master
         with: 
           tag: x86_64
-      - uses: ncipollo/release-action@v1.11.1
+      - uses: ncipollo/release-action@v1.12.0
         with:
           allowUpdates: True
           tag: "x86_64"
