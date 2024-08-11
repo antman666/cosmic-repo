@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         # repos: [cosmic-session-git, cosmic-workspaces-git, cosmic-settings-git, cosmic-settings-daemon-git, cosmic-screenshot-git, cosmic-randr-git, cosmic-panel-git, cosmic-osd-git, cosmic-notifications-git, cosmic-launcher-git, cosmic-icons-git, cosmic-greeter-git, cosmic-comp-git, cosmic-bg-git, cosmic-applibrary-git, cosmic-applets-git, xdg-desktop-portal-cosmic-git, cosmic-files-git, cosmic-edit-git, cosmic-store-git]
-        repos: [cosmic-settings-git, cosmic-settings-daemon-git, cosmic-screenshot-git, cosmic-launcher-git, cosmic-greeter-git, cosmic-applets-git, cosmic-edit-git, cosmic-store-git]
+        repos: [cosmic-session-git]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
