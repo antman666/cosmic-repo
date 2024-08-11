@@ -1,8 +1,7 @@
 name: Update Kernels db
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * 0,3'
+
 jobs:
   pull_others_kernels:
     runs-on: ubuntu-latest
