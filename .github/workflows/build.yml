@@ -1,13 +1,13 @@
 name: Auto Build Cosmic desktop software
 on: 
   workflow_dispatch:
-  push:
+  # push:
 jobs:
   build:
     strategy:
       matrix:
         # repos: [cosmic-session-git, cosmic-workspaces-git, cosmic-settings-git, cosmic-settings-daemon-git, cosmic-screenshot-git, cosmic-randr-git, cosmic-panel-git, cosmic-osd-git, cosmic-notifications-git, cosmic-launcher-git, cosmic-icons-git, cosmic-greeter-git, cosmic-comp-git, cosmic-bg-git, cosmic-applibrary-git, cosmic-applets-git, xdg-desktop-portal-cosmic-git, cosmic-files-git, cosmic-edit-git, cosmic-store-git]
-        repos: [adw-gtk3-git]
+        repos: [pop-launcher-git, cosmic-icons-git]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
