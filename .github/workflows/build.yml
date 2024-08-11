@@ -1,8 +1,7 @@
-name: Auto Build Some Kernels
+name: Auto Build Cosmic desktop software
 on: 
   workflow_dispatch:
-  schedule:
-    - cron: '0 15 * * 2,6'
+
 jobs:
   build:
     strategy:
