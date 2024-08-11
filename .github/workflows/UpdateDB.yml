@@ -1,4 +1,4 @@
-name: Update Kernels db
+name: Update repo db
 on:
   workflow_dispatch:
 
