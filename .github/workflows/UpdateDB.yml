@@ -3,29 +3,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  pull_others_kernels:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Add Others Kernels
-        uses: actions/checkout@v3.3.0
-      - run: |
-          bash pull_kernels.sh
-      - uses: ncipollo/release-action@v1.12.0
-        with:
-          allowUpdates: True
-          tag: "x86_64"
-          artifacts: "./*.zst"
-          token: ${{ secrets.GITHUB_TOKEN }}
   update_db:
-    needs: pull_others_kernels
     runs-on: ubuntu-latest
     steps: 
       - uses: antman666/update-db-for-repo@master
         with: 
           tag: x86_64
-      - uses: ncipollo/release-action@v1.12.0
+      - uses: ncipollo/release-action@main
         with:
           allowUpdates: True
           tag: "x86_64"
-          artifacts: "./kernels.*"
+          artifacts: "./cosmic.*"
           token: ${{ secrets.GITHUB_TOKEN }}
